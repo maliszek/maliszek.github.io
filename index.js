@@ -1,7 +1,10 @@
-if('serviceWorker' in navigator) {
+/*if('serviceWorker' in navigator) {
   navigator.serviceWorker
            .register('/sw.js')
 }
+*/
+
+
 
 let deferredPrompt;
 const addBtn = document.querySelector('.add-button');
@@ -43,3 +46,15 @@ function handleFile() {
   };
   reader.readAsDataURL(file);
 }
+
+window.onload = () => {
+    "use strict";
+    if('serviceWorker' in navigator) {
+        navigator.serviceWorker
+                .register('./sw.js')
+                .then(function() { console.log('Service Worker Registered'); });
+    }
+    uploadBtn.addEventListener("click", uploadImg);
+    uploadInput.addEventListener("change", handleFile);
+};
+
