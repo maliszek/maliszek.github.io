@@ -1,14 +1,29 @@
 <!doctype html>
-<html lang="en">
+<html lang="pl">
 <head>
   <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Hello World</title>
   <link rel="manifest" href="/manifest.json">
   <script src="index.js" defer></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.min.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.min.css"/>
 </head>
-<body class="fullscreen">
-  <div class="container">
-    <h1 class="title">Hello World!</h1>
-  </div>
+<body>
+  <div class="ui two column centered grid">
+      <div class="row">
+        <div class="column">
+          <input hidden type="file" class="upload-input" name="upload_image" accept="image/*" />
+          <button type="button" class="ui button upload-btn"><i class="upload icon"></i></button>
+        </div>
+      
+        <div class="column">
+          Zdjęcie: 
+          <div class="ui small image">
+            <img src="" class="image" />
+          </div>
+        </div>
+      </div>
+   </div>
 </body>
 </html>
