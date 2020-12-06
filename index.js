@@ -25,3 +25,21 @@ window.addEventListener('beforeinstallprompt', (e) => {
       });
   });
 });
+
+const uploadBtn = document.querySelector(".upload-btn");
+const uploadInput = document.querySelector(".upload-input");
+const img = document.querySelector("img.image");
+
+const uploadImg = () => {
+  uploadInput.click();
+};
+
+function handleFile() {
+  const file = this.files[0];
+  const reader = new FileReader();
+
+  reader.onload = () => {
+    img.src = reader.result;
+  };
+  reader.readAsDataURL(file);
+}
