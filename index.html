@@ -2,28 +2,54 @@
 <html lang="pl">
 <head>
   <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <base href="https://demos.jquerymobile.com/1.4.5/pages-single-page/">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Hello World</title>
-  <link rel="manifest" href="/manifest.json">
+  <link rel="manifest" href="manifest.webmanifest">
   <script src="index.js" defer></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.min.js"></script>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.min.css"/>
+  <link rel="stylesheet" href="https://code.jquery.com/mobile/1.2.1/jquery.mobile-1.2.1.min.css" />
+  <link rel="stylesheet" href="styles.css">
+  <script src="https://code.jquery.com/jquery-1.8.3.min.js"></script>
+  <script src="https://code.jquery.com/mobile/1.2.1/jquery.mobile-1.2.1.min.js"></script>
 </head>
-<body>
-  <div class="ui two column centered grid">
-      <div class="row">
-        <div class="column">
-          <input hidden type="file" class="upload-input" name="upload_image" accept="image/*" />
-          <button type="button" class="ui button upload-btn"><i class="upload icon"></i></button>
-        </div>
-      
-        <div class="column">
-          Zdjęcie: 
-          <div class="ui small image">
-            <img src="" class="image" />
-          </div>
-        </div>
+<body class="fullscreen">
+  <button class="add-button">Dodaj na swoj ekran!</button>
+  <div data-role="page">
+    
+      <div data-role="header">
+        <h1>Header</h1>
       </div>
-   </div>
+    
+      <div role="main" class="ui-content">
+        <p>Content</p>
+        <button onclick="notify()">Notyfikacja</button>
+      </div>
+    
+      <div data-role="footer">
+        <h4>Footer</h4>
+      </div>
+  </div>
+  
+<script>
+    function notify() {
+      console.log("Powiadomienie");
+      if (!("Notification" in window)) {
+        alert("Ta przeglądarka nie obsługuje powiadomień");
+      }
+  
+      else if (Notification.permission === "granted") {
+        var notification = new Notification("hello world!");
+      }
+  
+      else if (Notification.permission !== 'denied') {
+        Notification.requestPermission(function (permission) {
+          if (permission === "granted") {
+            var notification = new Notification("hello world!");
+          }
+        });
+      }
+    }
+    </script>  
+  
 </body>
 </html>
