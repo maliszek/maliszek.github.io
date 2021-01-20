@@ -1,0 +1,15 @@
+{
+    "name": "Druzyna wojskowa",
+    "short_name": "druzyna",
+    "icons": [
+        {
+            "src": "/icon/army-icon.jpg",
+            "type": "image/jpg",
+            "sizes": "128x128"
+        }
+    ],
+    "start_url": "/",
+    "theme_color": "#016188",
+    "background_color": "#eeeeee",
+    "display": "standalone"
+}
