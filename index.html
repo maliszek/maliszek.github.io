@@ -25,6 +25,8 @@
         <button onclick="notify()">Notyfikacja</button>
       </div>
     
+      <div id='showData'></div>   
+    
       <div data-role="footer">
         <h4>Copyright 2021 Piotr Maliszewski</h4>
       </div>
@@ -50,6 +52,21 @@
       }
     }
     </script>  
+  <script>
+    // Create XMLHttpRequest object.
+    var oXHR = new XMLHttpRequest();
+
+    // Initiate request.
+    oXHR.onreadystatechange = reportStatus;
+    oXHR.open("GET", "druzyna.json", true);  // get json file.
+    oXHR.send();
+
+    function reportStatus() {
+        if (oXHR.readyState == 4) {		// Check if request is complete.
+            document.getElementById('showData').innerHTML = this.responseText;
+        }
+    }
+</script>
   
 </body>
 </html>
