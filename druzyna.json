@@ -1,0 +1,185 @@
+{
+    "druzyna": [
+        {
+            "dowodca": [
+                {
+                "nazwa_operacyjna": "Stary",
+                "dlugosc_sluzby": 10,
+                "natychmiastowa_gotowosc": "tak",
+                "rejon_rozlokowania": "tak",
+                "posiadana_bron": "Grot",
+                "status_medyczny": "zdrowy",
+                "status_zaszczepienia": "zaszczepiony",
+                "id_karty": 2043,
+                "wyposazenie": "pelne",
+                "amunicja": 6,
+                "image": "https://jwk.wp.mil.pl/u/comando.jpg",    
+                    "zastepca": [
+                        {
+                        "nazwa_operacyjna": "Stryjek",
+                        "dlugosc_sluzby": 8,
+                        "natychmiastowa_gotowosc": "tak",
+                        "rejon_rozlokowania": "tak",
+                        "posiadana_bron": "Beryl",
+                        "status_medyczny": "zdrowy",
+                        "status_zaszczepienia": "niezaszczepiony",
+                        "id_karty": 4327,
+                        "wyposazenie": "pelne",
+                        "amunicja": 6
+                        }
+                    ],
+                    "lacznik": [
+                        {
+                        "nazwa_operacyjna": "Biegacz",
+                        "dlugosc_sluzby": 14,
+                        "natychmiastowa_gotowosc": "nie",
+                        "rejon_rozlokowania": "nie",
+                        "posiadana_bron": "brak",
+                        "status_medyczny": "zdrowy",
+                        "status_zaszczepienia": "niezaszczepiony",
+                        "id_karty": 3613,
+                        "wyposazenie": "brak",
+                        "amunicja": 0
+                        }
+                    ]    
+                }    
+            ],
+            
+            "saper": [
+                {
+                "nazwa_operacyjna": "Bomba",
+                "dlugosc_sluzby": 4,
+                "natychmiastowa_gotowosc": "nie",
+                "rejon_rozlokowania": "tak",
+                "posiadana_bron": "Grot",
+                "status_medyczny": "chory",
+                "status_zaszczepienia": "zaszczepiony",
+                "id_karty": 1426,
+                "wyposazenie": "pelne",
+                "amunicja": 4
+                }
+            ],
+            
+            "strzelec": [
+                {
+                "nazwa_operacyjna": "Pocisk",
+                "dlugosc_sluzby": 9,
+                "natychmiastowa_gotowosc": "tak",
+                "rejon_rozlokowania": "nie",
+                "posiadana_bron": "Dragunov",
+                "status_medyczny": "zdrowy",
+                "status_zaszczepienia": "niezaszczepiony",
+                "id_karty": 3184,
+                "wyposazenie": "brak maski",
+                "amunicja": 8
+                }
+            ],
+            
+            "radiotelefonista": [
+                {
+                "nazwa_operacyjna": "Kolombo",
+                "dlugosc_sluzby": 3,
+                "natychmiastowa_gotowosc": "tak",
+                "rejon_rozlokowania": "nie",
+                "posiadana_bron": "Grot",
+                "status_medyczny": "zdrowy",
+                "status_zaszczepienia": "niezaszczepiony",
+                "id_karty": 6183,
+                "wyposazenie": "pelne",
+                "amunicja": 7
+                }
+            ],
+            
+            "medyk": [
+                {
+                "nazwa_operacyjna": "House",
+                "dlugosc_sluzby": 1,
+                "natychmiastowa_gotowosc": "tak",
+                "rejon_rozlokowania": "tak",
+                "posiadana_bron": "MP5",
+                "status_medyczny": "zdrowy",
+                "status_zaszczepienia": "zaszczepiony",
+                "id_karty": 9416,
+                "wyposazenie": "pelne",
+                "amunicja": 3
+                }
+            ],
+            
+            "ciezki": [
+                {
+                "nazwa_operacyjna": "Sieka",
+                "dlugosc_sluzby": 4,
+                "natychmiastowa_gotowosc": "nie",
+                "rejon_rozlokowania": "tak",
+                "posiadana_bron": "UKM",
+                "status_medyczny": "chory",
+                "status_zaszczepienia": "zaszczepiony",
+                "id_karty": 5722,
+                "wyposazenie": "pelne",
+                "amunicja": 14
+                }
+            ],
+            
+            "qrf": [
+                {
+                "nazwa_operacyjna": "Szybki",
+                "dlugosc_sluzby": 9,
+                "natychmiastowa_gotowosc": "tak",
+                "rejon_rozlokowania": "tak",
+                "posiadana_bron": "Uzi",
+                "status_medyczny": "zdrowy",
+                "status_zaszczepienia": "niezaszczepiony",
+                "id_karty": 3777,
+                "wyposazenie": "pelne",
+                "amunicja": 5
+                }
+            ],
+            
+            "mozdzierz": [
+                {
+                "nazwa_operacyjna": "Rakieta",
+                "dlugosc_sluzby": 6,
+                "natychmiastowa_gotowosc": "nie",
+                "rejon_rozlokowania": "nie",
+                "posiadana_bron": "M98",
+                "status_medyczny": "zdrowy",
+                "status_zaszczepienia": "zaszczepiony",
+                "id_karty": 7755,
+                "wyposazenie": "brak",
+                "amunicja": 10
+                }
+            ],
+            
+            "operator drona": [
+                {
+                "nazwa_operacyjna": "Superman",
+                "dlugosc_sluzby": 15,
+                "natychmiastowa_gotowosc": "tak",
+                "rejon_rozlokowania": "nie",
+                "posiadana_bron": "brak",
+                "status_medyczny": "zdrowy",
+                "status_zaszczepienia": "zaszczepiony",
+                "id_karty": 1536,
+                "wyposazenie": "brak",
+                "amunicja": "brak"
+                }
+            ],
+            
+            "kierowca": [
+                {
+                "nazwa_operacyjna": "Walker",
+                "dlugosc_sluzby": 2,
+                "natychmiastowa_gotowosc": "tak",
+                "rejon_rozlokowania": "tak",
+                "posiadana_bron": "Glock",
+                "status_medyczny": "zdrowy",
+                "status_zaszczepienia": "zaszczepiony",
+                "id_karty": 5523,
+                "wyposazenie": "brak",
+                "amunicja": "4"
+                }
+            ]
+            
+        }
+    ]
+}
