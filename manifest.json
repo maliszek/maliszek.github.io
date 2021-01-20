@@ -1,7 +1,7 @@
 {
   "background_color": "#4D6234",
   "description": "Czlonkowie druzyny wojskowej i ich dane",
-  "display": "fullscreen",
+  "display": "standalone",
   "icons": [
     {
       "src": "icon/army-icon.jpg",
